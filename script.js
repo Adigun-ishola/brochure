@@ -27,8 +27,8 @@ function triggerReveal(container) {
   if (!container) return;
   const items = container.querySelectorAll('.reveal');
 
-  // Day One is a single connected programme stack, so it enters as one scene.
-  if (container.id === 'view-day-one') {
+  // Each daily programme is a connected stack, so it enters as one scene.
+  if (['view-day-one', 'view-day-two', 'view-day-three'].includes(container.id)) {
     items.forEach(el => {
       el.classList.remove('in-view');
       void el.offsetWidth;

@@ -236,7 +236,9 @@ body {
 .credit-badge img { height: 22px; width: auto; display: block; }
 
 /* ---------- Day One ---------- */
-#view-day-one { padding: 0; margin: -40px -60px; }
+#view-day-one,
+#view-day-two,
+#view-day-three { padding: 0; margin: -40px -60px; }
 
 .d1-page {
   background: #3a1a12 url("assets/day-one-bg.png") top center/cover no-repeat;
